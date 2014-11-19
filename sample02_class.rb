@@ -2,52 +2,52 @@
 # -*- encoding: utf-8 -*-
 
 # クラス
-class Sample
+class Bocchi
 
   # @@はクラス変数
-  @@foo = 'var'
+  @@relationship = 'bocchi'
 
   # 初期化メソッド
-  def initialize(hoge, bar)
+  def initialize(name, status)
     # @はインスタンス変数
-    @hoge = hoge
-    @bar  = bar
+    @name   = name
+    @status = status
   end
 
   # getter
-  def hoge
-    @hoge
+  def name
+    @name
   end
 
   # setter
-  def hoge=(value)
-    @hoge = value
+  def name=(value)
+    @name = value
   end
 
   # アクセッサメソッド
   # attr_writer, attr_reader
-  attr_accessor :bar
+  attr_accessor :status
 
-  def display(value = 'Hello world')
+  def display(value = 'Hello Bocchi')
     puts "disp: #{value}"
   end
 
   # to_sメソッド
   def to_s
-    "#{@hoge}, #{@bar}, #{@@foo}"
+    "#{@name} is #{@status}, so #{@@relationship}"
   end
 end
 
-obj = Sample.new('tege', 'fuga')
+obj = Bocchi.new('kura', 'bocchi')
 
-# setter
-puts obj.hoge
 # getter
-obj.hoge = 'hogehoge'
+puts obj.name
+# setter
+obj.name = 'kurara'
 
 # アクセッサ
-puts obj.bar
-obj.bar = 'fugafuga'
+puts obj.status
+obj.status = 'not bocchi'
 
 obj.display()
 
