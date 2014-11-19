@@ -4,8 +4,9 @@
 # PStore
 
 require 'pstore'
+database = "bocchi.pstore"
 
-db = PStore.new('bocchi.db')
+db = PStore.new(database)
 db.transaction do
   # PStoreに保存
   db["kura"] = "bocchi"
@@ -37,4 +38,4 @@ db.transaction do
   end
 end
 
-File.delete("bocchi.db")
+File.delete(database)
