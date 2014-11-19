@@ -5,7 +5,7 @@
 class Bocchi
 
   # @@はクラス変数
-  @@relationship = 'bocchi'
+  @@feeling = 'bocchi'
 
   # 初期化メソッド
   def initialize(name, status)
@@ -34,7 +34,7 @@ class Bocchi
 
   # to_sメソッド
   def to_s
-    "#{@name} is #{@status}, so #{@@relationship}"
+    "#{@name} is #{@status}, so #{@@feeling}"
   end
 end
 
