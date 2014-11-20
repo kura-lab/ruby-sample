@@ -1,0 +1,13 @@
+<%# -*- encoding: utf-8 -*- %>
+<% bocchi = {
+   :kura => "bocchi",
+   :kurara => "too bocchi",
+   :kurakura => "very bocchi"
+} %>
+<html>
+<body>
+<% bocchi.each { |key, value| %>
+<p><b><%= key %></b>: <%= value %></p>
+<% } %>
+</body>
+</html>

@@ -1,0 +1,13 @@
+%# $ erb sample02.erb
+%# -*- encoding: utf-8 -*-
+%#
+%# 先頭が%の行はrubyの処理
+%#
+% bocchi = ["kura", "kurara", "kurakura"]
+<html>
+<body>
+% bocchi.each { |name|
+  <p><%= name %></p>
+% }
+</body>
+</html>
