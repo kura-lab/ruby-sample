@@ -17,3 +17,17 @@ Note: At first, git clone rbenv.git before ruby-build.git
 $ ruby -v
 ruby 1.9.3p551 (2014-11-13 revision 48407) [x86_64-linux]
 ```
+
+### gem
+
+How to install a gem package.
+
+```
+$ gem install xxx
+```
+
+See installed gem
+
+```
+$ gem list
+```
