@@ -32,8 +32,8 @@ See installed gem.
 $ gem list
 ```
 
-Search gem package
+Search gem package.
 
 ```
 $ gem query -ra -n "rails"
-```.
+```
