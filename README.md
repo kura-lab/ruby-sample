@@ -26,8 +26,14 @@ How to install a gem package.
 $ gem install xxx
 ```
 
-See installed gem
+See installed gem.
 
 ```
 $ gem list
 ```
+
+Search gem package
+
+```
+$ gem query -ra -n "rails"
+```.
