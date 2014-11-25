@@ -24,6 +24,8 @@ How to install a gem package.
 
 ```
 $ gem install xxx
+// execute rehash if install a new command with rbenv
+$ rbenv rehash
 ```
 
 See installed gem.
