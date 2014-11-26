@@ -16,7 +16,8 @@ publicKey = rsa.public_key.to_s
 
 pub = RSA.new(publicKey)
 encrypted = pub.public_encrypt("kura is bocchi")
-puts "encrypted: " + Base64.encode64(encrypted)
+# \nを含まないBase64エンコードの場合はstrict_encode64を使う
+puts "encrypted: " + Base64.strict_encode64(encrypted)
 
 # 秘密鍵の暗号化なし
 # privateKey = rsa.export()
